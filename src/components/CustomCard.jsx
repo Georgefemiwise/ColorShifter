@@ -24,7 +24,7 @@ export default function CustomCard({ id, children, toggle, backgroundColor }) {
 					{children}
 				</h5>
 			</div>
-			<div class='absolute right-0 '>
+			<div class='absolute right-0'>
 				<button
 					id='copyButton'
 					onClick={() => copyHexCode(backgroundColor)}
