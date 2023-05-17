@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function Navbar() {
 	return (
-		<nav class='flex items-center justify-between flex-wrap border bg-[#E2CD9E]  p-3'>
+		<nav class='flex items-center justify-between flex-wrap border bg-[#835DCD]  p-3'>
 			<div class='flex items-center flex-shrink-0 text-white ml-16'>
-				<span class='font-semibold text-xl tracking-tight text-black text-center'>
+				<span class='font-semibold text-xl tracking-tight text-center'>
 					ColorShifter
 				</span>
 			</div>

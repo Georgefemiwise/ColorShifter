@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CustomCard from './CustomCard';
+import CustomCard from './components/CustomCard';
 import cardData from './cardData';
 import Navbar from './components/Navbar';
 
@@ -54,7 +54,7 @@ export default function App() {
 				Add Card
 			</button> */}
 			<div className=' flex justify-center items-center mt-16 '>
-				<div className='w-full m-16 md:px-5 grid gap-2 xxl:grid-cols-6  lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 sm:grid-col-1 place-content-center'>
+				<div className='w-4/6 m-16 md:px-5 grid gap-2 xxl:grid-cols-6  lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 sm:grid-col-1 place-content-center'>
 					{cardList}
 				</div>
 			</div>
