@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import CustomCard from './CustomCard';
-import cardData  from './cardData';
-
-
+import cardData from './cardData';
+import Navbar from './components/Navbar';
 
 export default function App() {
 	const [arrCard, setArrCard] = useState(cardData);
@@ -31,18 +30,31 @@ export default function App() {
 				key={card.id}
 				id={card.id}
 				children={card.code}
-				toggle={toggle}
+				toggle={() => toggle(card.id)}
 				backgroundColor={card.code}
 			/>
 		);
 	});
+	// const addCard = () => {
+	// 	const newCard = {
+	// 		id: cardData.length + 1,
+	// 		code: '#99E8D9',
+	// 	};
+	// 	setArrCard(prevArrCard.push(newCard));
+
+	// };
 
 	return (
 		<>
-			{/* TODO add flex column */}
-			<h1 className='text-center capitalize'>color-shifter</h1>
-			<div className=' flex justify-center items-center colunm'>
-				<div className='w-3/6 grid gap-1 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 sm:w-11/12 '>
+			<Navbar />
+
+			{/* <button
+				className='block bg-indigo-400 px-5 py-2'
+				onClick={()=>addCard()}>
+				Add Card
+			</button> */}
+			<div className=' flex justify-center items-center mt-16 '>
+				<div className='w-full m-16 md:px-5 grid gap-2 xxl:grid-cols-6  lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 sm:grid-col-1 place-content-center'>
 					{cardList}
 				</div>
 			</div>
@@ -50,19 +62,15 @@ export default function App() {
 	);
 }
 
-/*
-
- p-5'>
-				
-
-				<button
-					onClick={null}
-					className='bg-orange-500 p-1 px-3 capitalize rounded-sm'>
-					add more tile
-				</button>
-
-			</div>
-		</>
-	);
-}
-*/
+//   return (
+//     <div>
+//       {/* Render your card components using the cardData array */}
+//       {/* For example: */}
+//       {cardData.map((card) => (
+//         <div key={card.id} style={{ backgroundColor: card.backgroundColor }}>
+//           {/* Render card content */}
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
