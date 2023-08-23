@@ -1,34 +1,72 @@
 import React from 'react';
+import fire from '../assets/fire.svg'
 
 export default function Navbar() {
 	return (
-		<nav class='flex items-center justify-between flex-wrap border bg-[#835DCD]  p-3'>
-			<div class='flex items-center flex-shrink-0 text-white ml-16'>
-				<span class='font-semibold text-xl tracking-tight text-center'>
-					ColorShifter
-				</span>
-			</div>
-			{/* <div class='block lg:hidden'>
-				<button class='flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white'>
-					<svg
-						className='fill-current h-3 w-3'
-						viewBox='0 0 20 20'
-						xmlns='http://www.w3.org/2000/svg'>
-						<title>Menu</title>
-						<path d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' />
-					</svg>
-				</button>
-			</div> */}
-			{/* <div class='w-full block flex-grow lg:flex lg:items-center lg:w-auto'>
-				<div class='text-sm lg:flex-grow'></div>
-				<div>
-					<a
-						href='#'
-						class='inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0'>
-						Download
+		<nav class=' p-3'>
+			<div className='navbar bg-base-200 px-6 h-fit z-50 border-b border-b-neutral-content'>
+				<div className='navbar-start'>
+					<div className='dropdown'>
+						<label
+							tabIndex={0}
+							className='btn btn-ghost lg:hidden'>
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								className='h-5 w-5'
+								fill='none'
+								viewBox='0 0 24 24'
+								stroke='currentColor'>
+								<path
+									strokeLinecap='round'
+									strokeLinejoin='round'
+									strokeWidth='2'
+									d='M4 6h16M4 12h8m-8 6h16'
+								/>
+							</svg>
+						</label>
+						<ul
+							tabIndex={0}
+							className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52'>
+							<li>{/* <Link to='/'>Home</Link> */}</li>
+							{/* <li>
+								<a>Parent</a>
+								<ul className='p-2'>
+									<li>
+										<a>Submenu 1</a>
+									</li>
+									<li>
+										<a>Submenu 2</a>
+									</li>
+								</ul>
+							</li> */}
+							<li></li>
+						</ul>
+					</div>
+					<a className='btn btn-ghost normal-case gap-3'>
+						<img src={fire} alt="" />
+						Color Shifter
 					</a>
 				</div>
-			</div> */}
+
+				<div className='navbar-center hidden lg:flex'>
+					<ul className='menu menu-horizontal px-1'>
+						{/* <li tabIndex={0}>
+							<details>
+								<summary>Parent</summary>
+								<ul className='p-2'>
+									<li>
+										<a>Submenu 1</a>
+									</li>
+									<li>
+										<a>Submenu 2</a>
+									</li>
+								</ul>
+							</details>
+						</li> */}
+					</ul>
+				</div>
+				<div className='navbar-end'></div>
+			</div>
 		</nav>
 	);
 }

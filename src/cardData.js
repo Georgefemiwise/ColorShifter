@@ -17,6 +17,10 @@ export default [
 		code: '#7C87ED',
 	},
 	{
+		id: 8,
+		code: '#fffff',
+	},
+	{
 		id: 5,
 		code: '#99E8D9',
 	},
@@ -29,17 +33,10 @@ export default [
 		code: '#60B0FD',
 	},
 	{
-		id: 8,
-		code: '#fffff',
-	},
-	{
 		id: 9,
 		code: '#608550',
 	},
-	{
-		id: 10,
-		code: '#FB8B6C',
-	},
+	
 ];
 	
 
