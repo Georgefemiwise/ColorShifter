@@ -75,12 +75,53 @@ export default function App() {
 						</div>
 					</div>
 				</div>
-				<Section >
-					<div className='bg-secondary w-4/5 p-3'>ss</div>
+				<Section>
+					<div className='bg-secondary   p-60 rounded grid grid-cols-2 items-center'>
+						<div className='text-base-100'>
+							<h2 className='text-xl font-bold'>
+								Lorem ipsum dolor sit.
+							</h2>
+							<p className=''>
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Totam incidunt
+								cupiditate obcaecati commodi expedita
+								qui quidem repellat repellendus, modi
+								nesciunt!
+							</p>
+						</div>
+						<div className=' flex  justify-center'>
+							<img src={fire} alt='' className=' w-60 ' />
+						</div>
+					</div>
 				</Section>
-				<div className='w-2/3  gap-2 border  mx-auto'>
-					<div className='grid grid-cols-3'>{cardList}</div>
-				</div>
+				<Section>
+					<div className='bg-base-200 flex p-60 rounded items-center flex-row-reverse'>
+						<div className='   mx-auto'>
+							<div className='grid grid-cols-3 gap-5'>
+								{cardList}
+							</div>
+						</div>
+					</div>
+				</Section>
+				<Section>
+					<div className='m flex p-60 rounded items-center flex-row-reverse'>
+						<div className='mx-5'>
+							<h2 className='text-3xl font-bold'>
+								Lorem ipsum dolor sit.
+							</h2>
+							<p className='mt-3 '>
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Totam incidunt
+								cupiditate obcaecati commodi expedita
+								qui quidem repellat repellendus, modi
+								nesciunt!
+							</p>
+						</div>
+						<div className=' flex  justify-center '>
+							<img src={fire} alt='' className=' w-60 ' />
+						</div>
+					</div>
+				</Section>
 			</div>
 		</>
 	);

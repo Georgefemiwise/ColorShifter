@@ -2,7 +2,7 @@
 export default [
 	{
 		id: 1,
-		code: '#f44544',
+		code: '',
 	},
 	{
 		id: 2,
